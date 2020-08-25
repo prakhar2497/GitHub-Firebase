@@ -24,7 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
@@ -119,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "login-authentication"
+    }
+  },
+  "defaultProject": "login-authentication",
+  "cli": {
+    "analytics": "e6715c55-967c-4a23-b4fb-295a9b1c51cd"
+  }
 }

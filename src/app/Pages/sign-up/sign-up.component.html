@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col col-6 offset-3">
+            <div class="card">
+                <div class="bg-dark card-header text-white text-center">SIGN UP</div>
+                <div class="card-body">
+                    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">EMAIL</label>
+                            <div class="col-sm-9">
+                                <input type="email" name="email" ngModel class="form-control"
+                                    placeholder="Enter your Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">PASSWORD</label>
+                            <div class="col-sm-9">
+                                <input type="password" name="password" ngModel class="form-control"
+                                    placeholder="Enter your Password">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

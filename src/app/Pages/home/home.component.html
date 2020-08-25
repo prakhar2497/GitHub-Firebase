@@ -1,0 +1,23 @@
+<!--For userName inputted by user-->
+<div class="container">
+    <form (ngSubmit) = findUser()>
+        <div class="form-group">
+            <label for="User Name">User Name</label>
+            <input type="text" class="form-control-sm" id="userName" name="userName" [(ngModel)] = "userName">
+        </div>
+        <button type="submit" class="btn btn-dark"> Find User</button>
+    </form>
+<!--For Error-->
+<div *ngIf="error" class="alert alert-danger" role="alert">
+    {{error}}
+</div>
+<!-- To invoke user card and repo card details-->
+<div class="row">
+    <div class="col col-md-4">
+        <app-user *ngIf = "user" [user] = "user"></app-user>
+    </div>
+    <div class="col col-md-8">
+        <app-repos *ngIf = "user" [repoUrl] = "user.repos_url"></app-repos>
+    </div>
+</div>
+</div>
